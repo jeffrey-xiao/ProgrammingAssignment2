@@ -25,7 +25,6 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
 	m <- x$getmean()
 	if (!is.null(m)) {
-		message("GETTING CACHED VALUE")
 		return(m)
 	}
 	data <- x$get()
